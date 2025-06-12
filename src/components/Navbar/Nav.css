@@ -1,0 +1,33 @@
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 50px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav-menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.nav-contact
+{
+    padding: 10px 20px;
+    font-size: 22px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-contact:hover
+{
+    transform: scale(1.05);
+}
