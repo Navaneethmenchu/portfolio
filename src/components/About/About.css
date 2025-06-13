@@ -1,0 +1,128 @@
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 60px;
+}
+
+.about-title
+{
+    position: relative;
+    margin-top: 80px;
+}
+
+.about-title h1
+{
+    padding: 0px 20px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.about-title img
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.about-sections
+{
+    display: flex;
+    gap: 60px;
+}
+
+.about-left
+{
+    margin-top: 20px;
+}
+
+.about-right
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-para
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.about-skill 
+{
+    background-color: #1e1e1e;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition:  0.3s;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.about-skill:hover {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #48c6ef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+.about-achivements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.about-achivement {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+
+.about-achivement h1
+{
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #48c6ef);
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.about-achivement p
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.about-achivement:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}

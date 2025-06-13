@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     gap: 35px;
+    margin: 20px 50px;
 }
 
 .hero img
@@ -33,6 +34,42 @@
 .hero p
 {
     width: 50%;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
+}
+
+.hero-action
+{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    gap: 25px;
+}
+
+.hero-connect
+{
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #48c6ef);
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hero-resume
+{
+    background: linear-gradient(90deg, #ff6ec4, #7873f5, #48c6ef);
+    padding: 10px 35px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.hero-connect:hover
+{
+    border: 2px solid #48c6ef;
+}
+
+.hero-resume:hover
+{
+    border: 2px solid #48c6ef;
 }
