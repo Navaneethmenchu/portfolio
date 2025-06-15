@@ -17,6 +17,29 @@
     font-size: 20px;
 }
 
+.nav-menu li {
+  position: relative;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #48c6ef);
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+
+.nav-menu li.active::after {
+  width: 100%;
+}
+
+
 .nav-contact
 {
     padding: 10px 20px;
@@ -30,4 +53,10 @@
 .nav-contact:hover
 {
     transform: scale(1.05);
+}
+
+.anchor-link
+{
+    text-decoration: none;
+    color: white;
 }

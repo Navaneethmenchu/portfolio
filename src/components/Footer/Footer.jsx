@@ -18,8 +18,8 @@ const Footer = () => {
                         <nav className="footer-nav">
                             <a href="#">Home</a>
                             <a href="#about">About me</a>
-                            <a href="#about">Services</a>
-                            <a href="#about">portfolio</a>
+                            <a href="#services">Services</a>
+                            <a href="#work">portfolio</a>
                             <a href="#contact">Contact</a>
                         </nav>
                         <p className="footer-title">Let's connect and create something great!</p>

@@ -5,9 +5,32 @@ import { MdLocationPin } from "react-icons/md";
 import "./Contact.css"
 
 const Contact = () => {
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "5ecf8ba7-defc-4d97-89c7-201743744c86");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            alert(res.message);
+        }
+    };
+
     return (
         <>
-            <div className="contact">
+            <div id="contact" className="contact">
                 <div className="Contact-title">
                     <h2>Get in touch</h2>
                     <img src={theme} alt="theme pattern" />
@@ -22,11 +45,11 @@ const Contact = () => {
                             <p><MdLocationPin /> GA, USA</p>
                         </div>
                     </div>
-                    <form className="contact-right">
+                    <form onSubmit={onSubmit} className="contact-right">
                         <label htmlFor="">Your Name</label>
                         <input type="text" placeholder="Enter your name" name="name" required />
                         <label htmlFor="">Your Email</label>
-                        <input type="email" placeholder="Enter your email" name="name" required />
+                        <input type="email" placeholder="Enter your email" name="email" required />
                         <label htmlFor="">Your Message</label>
                         <textarea name="message" placeholder="Enter your message" rows="8" required></textarea>
                         <button className="contact-submit">submit</button>

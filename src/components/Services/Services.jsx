@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Services = () => {
     return (
         <>
-            <div className="services">
+            <div id="services" className="services">
                 <div className="services-title">
                     <h1>Services</h1>
                     <img src={theme} alt="theme" />
