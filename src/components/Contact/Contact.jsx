@@ -46,12 +46,12 @@ const Contact = () => {
                         </div>
                     </div>
                     <form onSubmit={onSubmit} className="contact-right">
-                        <label htmlFor="">Your Name</label>
-                        <input type="text" placeholder="Enter your name" name="name" required />
-                        <label htmlFor="">Your Email</label>
-                        <input type="email" placeholder="Enter your email" name="email" required />
-                        <label htmlFor="">Your Message</label>
-                        <textarea name="message" placeholder="Enter your message" rows="8" required></textarea>
+                        <label htmlFor="name">Your Name</label>
+                        <input type="text" placeholder="Enter your name" name="name" required id="name" autoComplete="name" />
+                        <label htmlFor="email">Your Email</label>
+                        <input type="email" placeholder="Enter your email" name="email" required id="email" autoComplete="email" />
+                        <label htmlFor="message">Your Message</label>
+                        <textarea name="message" placeholder="Enter your message" rows="8" required id="message"></textarea>
                         <button className="contact-submit">submit</button>
                     </form>
                 </div>

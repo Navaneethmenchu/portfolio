@@ -126,3 +126,62 @@
   transform: translateY(-5px);
   cursor: pointer;
 }
+
+
+@media(max-width:768px)
+{
+  .about
+  {
+    gap:60px;
+    margin: 30px 60px;
+    align-items: center;
+  }
+  .about-title h1
+  {
+    font-size: 50px;
+  }
+  .about-title img
+  {
+    width: 200px;
+    right: 15px;
+  }
+  .about-sections
+  {
+    flex-direction: column;
+  }
+  .about-left
+  {
+    display: none;
+  }
+  .about-para
+  {
+    font-size: 18px;
+  }
+
+  .about-skills
+  {
+    align-items: center;
+  }
+
+  .about-achivements
+  {
+    display: flex;
+  }
+
+  .about-achivement
+  {
+    width: 100px;
+  }
+
+  .about-achivement h1
+  {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .about-achivement p
+  {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}

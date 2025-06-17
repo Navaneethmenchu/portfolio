@@ -1,6 +1,9 @@
 import logo from "../../assets/portfolio-logo.png"
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
+import { FaRegCopyright } from "react-icons/fa";
+
 import "./Footer.css"
 
 const Footer = () => {
@@ -14,7 +17,7 @@ const Footer = () => {
                     <div className="footer-logo">
                         <img src={logo} alt="logo" width={180} height={120} />
                     </div>
-                    <div footer-main>
+                    <div className="footer-main">
                         <nav className="footer-nav">
                             <a href="#">Home</a>
                             <a href="#about">About me</a>
@@ -30,9 +33,9 @@ const Footer = () => {
                             <a href="https://github.com/Navaneethmenchu" target="_blank" rel="noopener noreferrer"><FaGithub /> GitHub</a>
                         </div>
 
-                        <button onClick={scrollToTop} className="back-to-top">↑ Back to Top</button>
+                        <button onClick={scrollToTop} className="back-to-top"><FaArrowUp /> Back to Top</button>
 
-                        <p className="footer-copy">© 2025 Navaneeth Menchu • Built with React, JavaScript & Node.js</p>
+                        <p className="footer-copy"><FaRegCopyright /> 2025 Navaneeth Menchu • Built with React, JavaScript & Node.js</p>
                     </div>
                 </div>
             </div>

@@ -5,6 +5,9 @@
     align-items: center;
     gap: 35px;
     margin: 20px 50px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
 }
 
 .hero img
@@ -74,4 +77,40 @@
 .hero-resume:hover
 {
     transform: scale(1.05);
+}
+
+@media (max-width:768px) 
+{
+    .hero {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero img
+    {
+        margin-bottom: 50px;
+        width: 200px;
+    }
+
+    .hero h1
+    {
+        width: 90%;
+        font-size: 40px;
+    }
+    .hero p
+    {
+        width: 60%;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .hero-action
+    {
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
 }

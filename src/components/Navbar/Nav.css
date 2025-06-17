@@ -3,8 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 50px;
+    margin: 0 auto;
     font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 20px 50px;
 }
 
 .nav-menu
@@ -59,4 +62,70 @@
 {
     text-decoration: none;
     color: white;
+}
+
+.nav-menu-close{
+  display: none;
+}
+
+.nav-menu-open{
+   display: none;
+}
+
+@media(max-width:768px){
+  .navbar
+  {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  .nav-contact
+  {
+    display: none;
+  }
+  .nav-menu-open
+  {
+    display: block;
+    position: fixed;
+    right: 15px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .nav-menu-close
+  {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .nav-menu
+  {
+    position: fixed;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: start;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    background-color: #1f0016;
+    z-index: 2;
+  }
+
+  .nav-menu li
+  {
+    font-size: 30px;
+    padding: 10px;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
